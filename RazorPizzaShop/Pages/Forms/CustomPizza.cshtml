@@ -3,4 +3,13 @@
 @{
 }
 
-<a class="nav-link text-dark" asp-area="" asp-page="Checkout/ThankYou">Thank You</a>
+<div class="text-center container">
+    <h1>Create Your Own Pizza!</h1>
+
+    <form method="post">
+        
+        <input type="text" asp-for="Pizza.PizzaName" placeholder="Give your pizza a name..." />
+
+        <button class="btn btn-success mt-1" type="submit">Order My Pizza</button> 
+    </form>
+</div> 
