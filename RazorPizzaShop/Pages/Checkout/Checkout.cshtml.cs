@@ -5,7 +5,7 @@ namespace RazorPizzaShop.Pages
 {
 
     // Bind all the properties to the view
-    [BindProperties]
+    [BindProperties(SupportsGet = true)]
     public class CheckoutModel : PageModel
     {
 
@@ -16,6 +16,21 @@ namespace RazorPizzaShop.Pages
         public string ImageTitle { get; set; }
         public void OnGet()
         {
+            // If no pizza name, add the name to be custom
+            if(string.IsNullOrEmpty(PizzaName))
+            {
+                PizzaName = "Custom";
+            }
+
+            // If no pizza image than add the create pizza image 
+            if(string.IsNullOrEmpty(ImageTitle))
+            {
+                ImageTitle = "Create";
+            }
+
+
+
+
         }
     }
 }

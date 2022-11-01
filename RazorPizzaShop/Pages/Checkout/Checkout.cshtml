@@ -3,4 +3,14 @@
 @{
 }
 
-<a class="nav-link text-dark" asp-area="" asp-page="Checkout/ThankYou">Checkout Cart</a>
+<h1>Your Order!</h1>
+<div class="align-content-center">
+    <div class="col-3 mx-auto mb-5">
+        
+        <img class="w-100" asp-append-version="true" />
+        <p>Your order for the Pizza is complete!</p>
+        <p>Your Total price is: </p>
+        <br/>
+        <a class="btn btn-primary mt-1 mx-auto" asp-area="" asp-page="ThankYouPage">Place Order</a>
+    </div>
+</div>
