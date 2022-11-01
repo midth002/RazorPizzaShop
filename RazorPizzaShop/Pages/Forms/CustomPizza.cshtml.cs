@@ -17,6 +17,7 @@ namespace RazorPizzaShop.Pages.Forms
 
         public void OnGet()
         {
+
         }
 
         public IActionResult OnPost()
