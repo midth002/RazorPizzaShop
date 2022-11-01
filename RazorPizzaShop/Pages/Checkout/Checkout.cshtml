@@ -11,8 +11,8 @@
     <div class="col-3 mx-auto mb-5">
         
         <img src=@imagePath class="w-100" asp-append-version="true" />
-        <p>Your order for the @Model.PizzaName is complete!</p>
-        <p>Your Total price is: @Model.PizzaPrice </p>
+        <p>Your order for the @Model.ImageTitle pizza is complete!</p>
+        <p>Your Total price is: $ @Model.PizzaPrice </p>
         <br/>
         <a class="btn btn-primary mt-1 mx-auto" asp-area="" asp-page="ThankYou">Place Order</a>
     </div>
